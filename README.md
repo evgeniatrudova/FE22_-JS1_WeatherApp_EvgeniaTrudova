@@ -1,4 +1,5 @@
 # FE22_-JS1_WeatherApp_EvgeniaTrudova
+//________________________________________________________________
 Inlämning 1, dokumentation. 
 //__DEL 1: API,som använder sig av  OPENWEATHERMAP & key -metod för att skaffa position och temperatur.______________________________________________________________
 /*  
@@ -10,6 +11,8 @@ Inlämning 1, dokumentation.
  6)    Data visas med documentQuery.
  7)    Kontroll; vid ingen sökning visas information för Stockholm. 
  */
+ 
+//________________________________________________________________ 
  Inlämning 2; dokumentation.
  //_____DEL 3: Kod exempel med Bootstrap utan key med API: metadata, som bara finns på 8 språk; ej på svenska; och innehåller begränsad antal väder punkt referenser och funkar bäst med välkända städer som t.ex London/ Stockholm men kommer inte att ge svar för Lund eller Malmö för att Sverige har endast 2 data punkter; för Stockholm och Göteborg___________________________________________________________
 /*  
@@ -132,6 +135,7 @@ Som ni har så snällt märkt; som Chrome- Console också gjort; så är lösnin
 > (237) this.coreDomElements.hideLoader(); samt  this.coreDomElements.showForecast(); är kod som krävs för att visa data på sidan.
 > (240) prepareTodaysForecastDetails länkar till forecast bibliotek;  för varje call; kontrolleras Api key och value; som syftar på data värde som finns innuti api; det är ett bugg kontroll funktion som via this. hämtar konkret data  som skickas vidare till showTodaysForecastDetails. Each, syftar på att det görs för varje call inuti forecast.
 > (249)prepareUpcommingDaysForecast; är del som kan vara relevant för forecast; kod del går ut på att för varje call in i forecast, hämtas index för vilken dag det är samt value. >Om index är större än 1, då kopplas in const för ikon; som hämtas bland api value och inom gruppen weather_state_abbr; samt temperatur och veckodag.
+ //________________________________________________________________
  >
  >
  > 
@@ -150,6 +154,7 @@ ger  utökning av felmeddelande med   GET https://000678353.codepen.website/loca
  >
  >
  >
+ //________________________________________________________________
  > (263) klass requestController är sista klass som  innehåller en constructor, showRequestInProgress, getQuery, fetchWeather, onSubmit, registerEventListener och slut const request. 
 > Syfter med denna klassen är att hosta felmeddelande samt aktivera query funktionen i resten av klasser. 
 constructor via metoden this hittar en Js-nämnd grupp som omvandlas till new- JSnämnd grupp.
